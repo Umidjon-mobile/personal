@@ -7,12 +7,13 @@ const Context = createContext<IContext | null>(null);
 
 export const Provider = ({ children }: ChildProps) => {
   const [email, setEmail] = useState<string>("");
+  
   const [password, setPassword] = useState<string>("");
   const [accounts, setAccounts] = useState<any[]>([]);
   const [title, setTitle] = useState<string>("");
   const [body, setBody] = useState<string>("");
   const [picture, setPicture] = useState<string>("");
-  
+
   const [user, setUser] = useState<any>([]);
   const router = useRouter();
 
