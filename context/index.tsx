@@ -12,9 +12,10 @@ export const Provider = ({ children }: ChildProps) => {
   const [title, setTitle] = useState<string>("");
   const [body, setBody] = useState<string>("");
   const [picture, setPicture] = useState<string>("");
+  
   const [user, setUser] = useState<any>([]);
   const router = useRouter();
-  
+
   const onSubmit = async () => {
     try {
       const response = await fetch(
